@@ -4,7 +4,7 @@
 }
 
 #nprogress .bar {
-    background: red;
+    background-image: linear-gradient(to right, #fc00ff, #00dbde);
     position: fixed;
     z-index: 1031;
     top: 0;
@@ -15,7 +15,7 @@
 }
 
 /* Fancy blur effect */
-#nprogress .peg {
+/* #nprogress .peg {
     display: block;
     position: absolute;
     right: 0px;
@@ -27,14 +27,14 @@
     -webkit-transform: rotate(3deg) translate(0px, -4px);
         -ms-transform: rotate(3deg) translate(0px, -4px);
             transform: rotate(3deg) translate(0px, -4px);
-}
+} */
 
 /* Remove these to get rid of the spinner */
 #nprogress .spinner {
     display: block;
     position: fixed;
     z-index: 1031;
-    top: 15px;
+    top: 25px;
     right: 15px;
 }
 
@@ -44,8 +44,8 @@
     box-sizing: border-box;
 
     border: solid 2px transparent;
-    border-top-color: red;
-    border-left-color: red;
+    border-top-color: #5183f5;
+    border-left-color: #5183f5;
     border-radius: 50%;
 
     -webkit-animation: nprogress-spinner 400ms linear infinite;

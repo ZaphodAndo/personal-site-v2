@@ -14,7 +14,7 @@ const theme = {
 };
 
 const StyledPage = styled.div`
-    background: white;
+    background: #2D2D2D;
     color: ${props => props.theme.red};
 `;
 
@@ -25,9 +25,57 @@ export default class index extends Component {
                 <StyledPage>
                     <Meta />
                     <Header></Header>
-                    <div>
-                        hello world
-                    </div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
+                    <div>hello world f</div>
                 </StyledPage>
             </ThemeProvider>
         )

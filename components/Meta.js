@@ -10,6 +10,7 @@ const Meta = () => (
         <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png"/>
         <link rel="manifest" href="static/site.webmanifest"/>
         <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
+        <link rel="stylesheet" type="text/css" href="/static/main.css" />
     </Head>
 );
 
