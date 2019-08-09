@@ -1,0 +1,30 @@
+{
+  "name": "blogv2",
+  "version": "1.0.0",
+  "description": "My blog ethana.dev version 2 with next.js",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^9.0.3",
+    "nprogress": "^0.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrGoebbels/BlogV2.git"
+  },
+  "author": "Ethan Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrGoebbels/BlogV2/issues"
+  },
+  "homepage": "https://github.com/MrGoebbels/BlogV2#readme"
+}
