@@ -2,20 +2,26 @@ import React, { Component } from 'react'
 import styled, { ThemeProvider } from 'styled-components';
 import Meta from '../components/Meta';
 import Header from '../components/Header';
-
-const theme = {
-    red: '#FF0000',
-    black: '#393939',
-    grey: '#3A3A3A',
-    lightgrey: '#E1E1E1',
-    offWhite: '#EDEDED',
-    maxWidth: '1000px',
-    bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
-};
+import theme from '../components/styles/theme';
+import Info from '../components/Info';
+import RecentPosts from '../components/RecentPosts';
+import Footer from '../components/Footer';
 
 const StyledPage = styled.div`
-    background: #2D2D2D;
-    color: ${props => props.theme.red};
+    display: flex;
+    flex-direction: column;
+    background: ${props => props.theme.background};
+    color: ${props => props.theme.text};
+`;
+
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 750px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 `;
 
 export default class index extends Component {
@@ -25,57 +31,11 @@ export default class index extends Component {
                 <StyledPage>
                     <Meta />
                     <Header></Header>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
-                    <div>hello world f</div>
+                    <Content>
+                        <Info></Info>
+                        <RecentPosts></RecentPosts>
+                    </Content>
+                    <Footer></Footer>
                 </StyledPage>
             </ThemeProvider>
         )

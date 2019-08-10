@@ -4,7 +4,7 @@
 }
 
 #nprogress .bar {
-    background-image: linear-gradient(to right, #fc00ff, #00dbde);
+    background-color: #5183f5;
     position: fixed;
     z-index: 1031;
     top: 0;

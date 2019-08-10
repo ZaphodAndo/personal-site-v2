@@ -17,11 +17,11 @@ Router.onRouteChangeError = () => {
 };
 
 const StyledHeader = styled.header`
-    position:fixed;
+    /* position: fixed; */
     min-width: 100%;
 
     hr {
-        background-image: linear-gradient(to right, #fc00ff, #00dbde);
+        background-color: #5183f5;
         margin: 0;
         border: 0;
         height: 2px;
@@ -73,6 +73,11 @@ const StyledHeader = styled.header`
     .brand img {
         margin-right: 1rem;
     }
+    .brand span {
+        @media screen and (max-width: 570px) {
+            display: none;
+        }
+    }
 `;
 
 export default class Header extends Component {
@@ -84,7 +89,7 @@ export default class Header extends Component {
                     <div>
                         <Link href="/">
                             <a className="brand">
-                                <img src="../static/favicon-32x32.png" alt=""/> 
+                                <img src="../static/favicon-32x32.png" alt="Website logo"/> 
                                 <span>Ethan Anderson</span>
                             </a>
                         </Link>

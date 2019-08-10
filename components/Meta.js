@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const Meta = () => (
     <Head>
-        <title>Ethan Anderson</title>
+        <title>Ethan Anderson - Frontend Web Dev</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="Description" content="A blog about all things Tech"/>
         <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png"/>
