@@ -32,6 +32,7 @@ const Content = styled.div`
 
     p {
         margin: 0;
+        font-size: 1.1rem;
     }
 
     .middle {
@@ -45,6 +46,7 @@ const Content = styled.div`
 
     ul {
         margin: 0;
+        font-size: 1.1rem;
     }
 `;
 
