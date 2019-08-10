@@ -47,16 +47,17 @@ const Tag = styled.div`
 `;
 
 export default class PostBlock extends Component {
+    
     render() {
         return (
             <PostBlockContent theme={theme}>
-                <Link href="/">
+                <Link href={this.props.href}>
                     <a>
                         <div>
-                            <p className="title">Welcome to my site!</p>
-                            <p>Something I will redesign hundred of times only to make two posts! 🤣</p>
+                            <p className="title">{this.props.title}</p>
+                            <p>{this.props.desc}</p>
                         </div>
-                        <Tag>Flutter</Tag>
+                        <Tag>{this.props.tag}</Tag>
                     </a>
                 </Link>
             </PostBlockContent>
