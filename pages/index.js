@@ -22,6 +22,7 @@ const Content = styled.div`
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 50px;
 `;
 
 export default class index extends Component {
