@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import NProgress from 'nprogress';
 import Router from 'next/router';
+import theme from '../components/styles/theme';
 
 Router.onRouteChangeStart = () => {
     NProgress.start();
@@ -25,7 +26,7 @@ const StyledHeader = styled.header`
     box-shadow: 1px 2px 18px rgba(0,0,0,.1);
 
     hr {
-        background-color: #5183f5;
+        background-color: ${props => props.theme.primaryColour};
         margin: 0;
         border: 0;
         height: 2px;
@@ -63,11 +64,11 @@ const StyledHeader = styled.header`
         border-bottom: 2px solid transparent;
     }
     .links a:hover {
-        color: #b3b9c5;
-        border-bottom: 2px solid #5183f5;
+        color: ${props => props.theme.text};
+        border-bottom: 2px solid ${props => props.theme.primaryColour};
     }
     .links a:active {
-        border-bottom: 2px dashed #5183f5;
+        border-bottom: 2px dashed ${props => props.theme.primaryColour};
     }
     
     a {
@@ -78,7 +79,7 @@ const StyledHeader = styled.header`
         padding: 1rem .5rem;
     }
     a:hover {
-        color: #b3b9c5;
+        color: ${props => props.theme.text};
     }
 
     .brand {
@@ -100,7 +101,7 @@ const StyledHeader = styled.header`
 export default class Header extends Component {
     render() {
         return (
-            <StyledHeader>
+            <StyledHeader theme={theme}>
                 <hr/>
                 <div className="nav-bar-wrapper">
                     <div className="nav-bar">

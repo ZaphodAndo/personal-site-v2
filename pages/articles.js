@@ -5,6 +5,7 @@ import Meta from '../components/Meta';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import LargePostBlock from '../components/LargePostBlock';
+import Tag from '../components/styles/Tag';
 
 const ArticleContent = styled.div`
     background: ${props => props.theme.background};
@@ -15,7 +16,7 @@ const MainContent = styled.div`
     display: flex;
     flex-direction: column;
     align-self: center;
-    max-width: 750px;
+    max-width: ${props => props.theme.pageWidth};
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -31,37 +32,13 @@ const MainContent = styled.div`
     }
 `;
 
-const Tag = styled.div`
-    align-self: center;
-    text-decoration: none;
-    font-weight: 500;
-    color: ${props => props.theme.blue};
-    background-color: rgba(0,0,0,.2);
-    padding: 10px;
-    border-radius: 4px;
-    max-height: 20px;
-    margin-right: 5px;
-
-    transform: translateZ(0);
-    transition-duration: 0.3s;
-    transition-property: transform;
-
-    &:hover, &:focus, &:active {
-        background: transparent;
-        background-color: rgba(0,0,0,.1);
-        color: #81a5f8;
-
-        transform: scale(1.1);
-    }
-`;
-
 export default class articles extends Component {
     render() {
         return (
             <ArticleContent theme={theme}>
                 <Meta></Meta>
                 <Header></Header>
-                <MainContent>
+                <MainContent theme={theme}>
                     <h1>Articles</h1>
                     <div className="tags">
                         <Tag theme={theme}>Git</Tag>

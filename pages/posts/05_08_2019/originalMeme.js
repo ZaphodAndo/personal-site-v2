@@ -14,7 +14,7 @@ const WelcomeToMySiteContent = styled.div`
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 750px;
+    max-width: ${props => props.theme.pageWidth};
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -24,15 +24,6 @@ const Content = styled.div`
 const ArticleContent = styled.div`
     p {
         font-size: 1.1rem;
-    }
-
-    a {
-        text-decoration: none;
-        font-weight: 600;
-        color: #81a5f8;
-    }
-    a:hover {
-        color: ${props => props.theme.blue};
     }
 
     .middle {
@@ -63,8 +54,8 @@ export default class originalMeme extends Component {
             <WelcomeToMySiteContent theme={theme}>
                 <Meta />
                 <Header></Header>
-                <Content>
-                <ArticleInfo title="An original meme and a blast from the past!" desc="Its an old meme sir but it still checks out." date="5 August 2019" tag1="Meme" tag2="Blog Filler"></ArticleInfo>
+                <Content theme={theme}>
+                <ArticleInfo theme={theme} title="An original meme and a blast from the past!" desc="Its an old meme sir but it still checks out." date="5 August 2019" tag1="Meme" tag2="Blog Filler"></ArticleInfo>
                     <ArticleContent theme={theme}>
                         <div className="video-container"><iframe width="700" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                         <p>I had to have something to post on my site to start it off. 🤣</p>

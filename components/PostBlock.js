@@ -37,7 +37,7 @@ const Tag = styled.div`
     align-self: center;
     text-decoration: none;
     font-weight: 500;
-    color: ${props => props.theme.blue};
+    color: ${props => props.theme.primaryColour};
     background-color: rgba(0,0,0,.2);
     padding: 10px;
     border-radius: 4px;

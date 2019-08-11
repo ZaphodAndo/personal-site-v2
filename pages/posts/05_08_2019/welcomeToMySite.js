@@ -15,7 +15,7 @@ const WelcomeToMySiteContent = styled.div`
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 750px;
+    max-width: ${props => props.theme.pageWidth};
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -32,10 +32,10 @@ const ArticleContent = styled.div`
     a {
         text-decoration: none;
         font-weight: 600;
-        color: #81a5f8;
+        color: ${props => props.theme.secondaryColour};
     }
     a:hover {
-        color: ${props => props.theme.blue};
+        color: ${props => props.theme.primaryColour};
     }
 
     .middle {
@@ -50,7 +50,7 @@ export default class welcomeToMySite extends Component {
             <WelcomeToMySiteContent theme={theme}>
                 <Meta />
                 <Header></Header>
-                <Content>
+                <Content theme={theme}>
                     <ArticleInfo title="Welcome to my site" desc="Something I will redesign hundred of times only to make two posts! 🤣" date="5 August 2019" tag1="Misc" tag2="First Post"></ArticleInfo>
                     <ArticleContent theme={theme}>
                         <h2>Welcome 👋</h2>

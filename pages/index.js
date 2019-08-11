@@ -18,7 +18,7 @@ const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-self: center;
-    max-width: 750px;
+    max-width: ${props => props.theme.pageWidth};
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;

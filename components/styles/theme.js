@@ -1,10 +1,10 @@
 const theme = {
     background: '#2D2D2D',
     text: '#b3b9c5',
-    primaryColour: '#BB86FC',
-    secondaryColour: '#03DAC5',
-    mainGradient: 'linear-gradient(to right, #fc00ff, #00dbde);',
+    primaryColour: '#5183f5',
+    secondaryColour: '#81a5f8',
     blue: '#5183f5;',
+    pageWidth: '750px;',
 };
 
 export default theme;

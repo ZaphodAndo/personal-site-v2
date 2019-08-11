@@ -15,7 +15,7 @@ const WelcomeToMySiteContent = styled.div`
 const Content = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 750px;
+    max-width: ${props => props.theme.pageWidth};
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -32,10 +32,10 @@ const ArticleContent = styled.div`
     a {
         text-decoration: none;
         font-weight: 600;
-        color: #81a5f8;
+        color: ${props => props.theme.secondaryColour};
     }
     a:hover {
-        color: ${props => props.theme.blue};
+        color: ${props => props.theme.primaryColour};
     }
 
     img {
@@ -49,7 +49,7 @@ export default class welcomeToMySite extends Component {
             <WelcomeToMySiteContent theme={theme}>
                 <Meta />
                 <Header></Header>
-                <Content>
+                <Content theme={theme}>
                     <ArticleInfo title="Setting up Git!" desc="How to set up Git on your machine. 💻" date="7 August 2019" tag1="Git" tag2="Guide"></ArticleInfo>
                     <ArticleContent theme={theme}>
                         <h2>Useful Links 🙌</h2>
