@@ -21,7 +21,7 @@ export default class Footer extends Component {
     render() {
         return (
             <FooterContent theme={theme}>
-                <Link href="https://ethana.dev/about.html">
+                <Link href="https://twitter.com/Goebbels_Ando">
                     <a>Twitter</a>
                 </Link>
                 <Link href="https://www.linkedin.com/in/ethan-anderson-41ba9a172/">

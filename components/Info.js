@@ -8,7 +8,6 @@ const InfoContent = styled.div`
     justify-content: center;
     background: ${props => props.theme.background};
     color: ${props => props.theme.text};
-    /*Add 64px if header is fixed*/
     margin-top: 50px;
 
     h1 {

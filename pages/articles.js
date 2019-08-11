@@ -69,9 +69,9 @@ export default class articles extends Component {
                         <Tag theme={theme}>Misc</Tag>
                     </div>
                     <div className="articleContainer">
-                        <LargePostBlock href="/" title="Setting up Git!" desc="How to set up Git on your machine. 💻" date="7 August 2019" tag="Git"></LargePostBlock>
-                        <LargePostBlock href="/" title="An original meme and a blast from the past!" desc="Its an old meme sir but it still checks out." date="5 August 2019" tag="Meme"></LargePostBlock>
-                        <LargePostBlock href="/" title="Welcome to my site!" desc="Something I will redesign hundred of times only to make two posts!" date="5 August 2019" tag="Misc"></LargePostBlock>
+                        <LargePostBlock href="/posts/07_08_2019/settingUpGit" title="Setting up Git!" desc="How to set up Git on your machine. 💻" date="7 August 2019" tag="Git"></LargePostBlock>
+                        <LargePostBlock href="/posts/05_08_2019/originalMeme" title="An original meme and a blast from the past!" desc="Its an old meme sir but it still checks out." date="5 August 2019" tag="Meme"></LargePostBlock>
+                        <LargePostBlock href="/posts/05_08_2019/welcomeToMySite" title="Welcome to my site!" desc="Something I will redesign hundred of times only to make two posts!" date="5 August 2019" tag="Misc"></LargePostBlock>
                     </div>
                 </MainContent>
                 <Footer></Footer>

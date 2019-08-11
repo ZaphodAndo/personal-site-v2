@@ -107,7 +107,7 @@ export default class Header extends Component {
                         <div>
                             <Link href="/">
                                 <a className="brand">
-                                    <img src="../static/favicon-32x32.png" alt="Website logo"/> 
+                                    <img src="/static/favicon-32x32.png" alt="Website logo"/> 
                                     <span>Ethan Anderson</span>
                                 </a>
                             </Link>
