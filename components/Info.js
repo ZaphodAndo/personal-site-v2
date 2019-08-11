@@ -5,7 +5,7 @@ import theme from '../components/styles/theme';
 
 const InfoContent = styled.div`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background: ${props => props.theme.background};
     color: ${props => props.theme.text};
     margin-top: 50px;
@@ -58,7 +58,7 @@ export default class Info extends Component {
                         <TwitterFollowButton
                             screenName={'Goebbels_Ando'}
                         />
-                        <iframe className="follow" src="https://ghbtns.com/github-btn.html?user=MrGoebbels&type=follow&count=true" frameBorder="0" scrolling="0" width="170px" height="20px"></iframe>
+                        <iframe className="follow" src="https://ghbtns.com/github-btn.html?user=MrGoebbels&type=follow&count=true" frameBorder="0" scrolling="0" width="150px" height="20px"></iframe>
                     </Links>
                 </div>
             </InfoContent>

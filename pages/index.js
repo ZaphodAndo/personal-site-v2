@@ -8,8 +8,6 @@ import RecentPosts from '../components/RecentPosts';
 import Footer from '../components/Footer';
 
 const StyledPage = styled.div`
-    display: flex;
-    flex-direction: column;
     background: ${props => props.theme.background};
     color: ${props => props.theme.text};
 `;
