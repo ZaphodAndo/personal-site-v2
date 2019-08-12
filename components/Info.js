@@ -36,6 +36,8 @@ const Description = styled.div`
     img {
         width: 180px;
         height: 180px;
+        min-width: 180px;
+        min-height: 180px;
         margin: 20px;
 
         @media screen and (max-width: 850px) {
@@ -49,7 +51,7 @@ export default class Info extends Component {
         return (
             <InfoContent theme={theme}>
                 <div>
-                    <h1>Hi, I'm Ethan 👋</h1>
+                    <h1>Hi, I'm Ethan</h1>
                     <Description>
                         <p>I’m an apprentice applications developer who works for a company called PebblePad. I am mostly a Frontend dev that occasionally delves into a bit of backend and other areas especially at my place of work where I use a lot of C# and .NET alongside your usual frontend technologies such as JavaScript.</p>
                         <img src="../static/profilePic.jpg" alt="Profile picture"/>
