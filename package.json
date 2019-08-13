@@ -1,7 +1,7 @@
 {
-  "name": "blogv2",
-  "version": "1.0.0",
-  "description": "My blog ethana.dev version 2 with next.js",
+  "name": "ethana.dev",
+  "version": "2.0.0",
+  "description": "Version 2 of my blog ethana.dev now built in next.js",
   "main": "index.js",
   "dependencies": {
     "next": "^9.0.3",
@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrGoebbels/BlogV2.git"
+    "url": "git+https://github.com/MrGoebbels/ethana.dev.git"
   },
   "author": "Ethan Anderson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrGoebbels/BlogV2/issues"
+    "url": "https://github.com/MrGoebbels/ethana.dev/issues"
   },
-  "homepage": "https://github.com/MrGoebbels/BlogV2#readme"
+  "homepage": "https://github.com/MrGoebbels/ethana.dev#readme"
 }
