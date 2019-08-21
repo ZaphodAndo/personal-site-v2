@@ -21,17 +21,17 @@ export default class Footer extends Component {
     render() {
         return (
             <FooterContent theme={theme}>
-                <Link href="https://twitter.com/Goebbels_Ando">
-                    <a>Twitter</a>
+                <Link href="https://twitter.com/ethan_ando">
+                    <a target="_blank">Twitter</a>
                 </Link>
                 <Link href="https://www.linkedin.com/in/ethan-anderson-41ba9a172/">
-                    <a>LinkedIn</a>
+                    <a target="_blank">LinkedIn</a>
                 </Link>
                 <Link href="https://medium.com/@ethan.anderson">
-                    <a>Medium</a>
+                    <a target="_blank">Medium</a>
                 </Link>
-                <Link href="https://github.com/MrGoebbels">
-                    <a>Github</a>
+                <Link href="https://github.com/ZaphodAndo">
+                    <a target="_blank">Github</a>
                 </Link>
             </FooterContent>
         )
