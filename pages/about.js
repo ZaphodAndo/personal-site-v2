@@ -79,7 +79,7 @@ export default class about extends Component {
                         or something. 🦀
                     </p>
                     <h2>My Links</h2>
-                    <Link href="https://twitter.com/Goebbels_Ando">
+                    <Link href="https://twitter.com/ethan_ando">
                         <a>🦜 Twitter</a>
                     </Link>
                     <Link href="https://www.linkedin.com/in/ethan-anderson-41ba9a172">
@@ -88,7 +88,7 @@ export default class about extends Component {
                     <Link href="https://medium.com/@ethan.anderson">
                         <a>📰 Medium</a>
                     </Link>
-                    <Link href="https://github.com/MrGoebbels">
+                    <Link href="https://github.com/ZaphodAndo">
                         <a>🐙 GitHub</a>
                     </Link>
                     <h2>Currently Using</h2>
